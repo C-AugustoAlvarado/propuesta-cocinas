@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Propuesta de Colaboración Mensual — Desarrollo de Proyectos de Cocina</title>
+  <style>
+    :root{
+      --ink:#111;
+      --muted:#555;
+      --line:#e6e6e6;
+      --paper:#fff;
+      --accent:#0aa6c6;
+      --accent2:#f2a332;
+      --radius:12px;
+      --font: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, "Noto Sans", "Liberation Sans", sans-serif;
+    }
+
+    *{box-sizing:border-box;}
+    body{margin:0;background:#f4f4f4;color:var(--ink);font-family:var(--font);-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}
+
+    /* A4 page container */
+    .page{
+      width:210mm;
+      min-height:297mm;
+      margin:18px auto;
+      background:var(--paper);
+      border:1px solid var(--line);
+      border-radius:10px;
+      box-shadow:0 12px 28px rgba(0,0,0,.08);
+      overflow:hidden;
+      position:relative;
+    }
+
+    .wrap{padding:18mm 20mm 16mm 20mm;}
+
+    @page{ size:A4; margin:0; }
+    @media print{
+      body{background:#fff;}
+      .page{margin:0;border:none;border-radius:0;box-shadow:none;}
+      .wrap{padding:18mm 20mm 16mm 20mm;}
+    }
+
+    /* Header */
+    header{
+      border-bottom:1px solid var(--line);
+      padding:16mm 20mm 10mm 20mm;
+      background:linear-gradient(90deg, rgba(10,166,198,.10), rgba(242,163,50,.10));
+    }
+    .kicker{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:rgba(0,0,0,.55);font-weight:800;}
+    h1{margin:8px 0 2px 0;font-size:26px;letter-spacing:-.02em;line-height:1.1;}
+    h2{margin:0;font-size:16px;color:rgba(0,0,0,.70);font-weight:700;}
+
+    /* Content */
+    .section{margin:14px 0 0 0;}
+    .section-title{
+      display:flex;align-items:baseline;justify-content:space-between;gap:12px;
+      margin:0 0 8px 0;
+      padding-bottom:6px;
+      border-bottom:1px solid var(--line);
+    }
+    .section-title .t{font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:900;color:rgba(0,0,0,.75)}
+    .section-title .n{font-size:12px;letter-spacing:.10em;font-weight:900;color:rgba(0,0,0,.40)}
+
+    p{margin:0 0 10px 0;font-size:11.4px;line-height:1.55;color:rgba(0,0,0,.86)}
+    ul{margin:0 0 10px 0;padding-left:18px;}
+    li{margin:6px 0;font-size:11.4px;line-height:1.55;color:rgba(0,0,0,.86)}
+
+    .card{
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      padding:10px 12px;
+      background:#fff;
+      margin-top:10px;
+    }
+    .card h3{margin:0 0 6px 0;font-size:12px;letter-spacing:.10em;text-transform:uppercase;font-weight:900;color:rgba(0,0,0,.72)}
+    .price{font-weight:900;}
+
+    .note{font-size:10.7px;line-height:1.45;color:rgba(0,0,0,.62)}
+
+    footer{
+      position:absolute;left:20mm;right:20mm;bottom:10mm;
+      display:flex;justify-content:space-between;align-items:center;
+      font-size:10.5px;color:rgba(0,0,0,.55);
+      border-top:1px solid var(--line);
+      padding-top:6mm;
+    }
+    .dot{width:8px;height:8px;border-radius:50%;background:rgba(0,0,0,.18);display:inline-block;margin-right:8px;}
+
+    /* Mobile preview */
+    @media (max-width: 900px){
+      .page{width:auto;min-height:auto;border-radius:0;}
+      header,.wrap{padding:18px;}
+      footer{position:static;margin:18px;padding:12px 0 0 0;}
+    }
+  </style>
+</head>
+<body>
+  <main class="page" aria-label="Propuesta">
+    <header>
+      <div class="kicker">Propuesta de colaboración mensual</div>
+      <h1>PROPUESTA DE COLABORACIÓN MENSUAL</h1>
+      <h2>Desarrollo de Proyectos de Cocina</h2>
+    </header>
+
+    <div class="wrap">
+
+      <section class="section">
+        <div class="section-title"><div class="t">1. CONTEXTO</div><div class="n">01</div></div>
+        <p>Durante los últimos años hemos colaborado en el desarrollo de sus proyectos de cocina, apoyando en la interpretación de planos, modelado 3D, renders y ajustes técnicos necesarios para presentar cada propuesta de forma clara y profesional ante sus clientes.</p>
+        <p>La incorporación de revisiones en tiempo real con el cliente final ha demostrado mejorar significativamente la comprensión del proyecto, agilizar la toma de decisiones y facilitar el cierre comercial.</p>
+        <p>Con base en esta experiencia, proponemos establecer un esquema de colaboración mensual que reserve capacidad operativa para sus proyectos y permita mantener un flujo de trabajo ágil y predecible para ambas partes.</p>
+      </section>
+
+      <section class="section">
+        <div class="section-title"><div class="t">2. OBJETIVO DEL ESQUEMA</div><div class="n">02</div></div>
+        <ul>
+          <li>Mantener tiempos de entrega ágiles (habitualmente 3 días hábiles por proyecto, contados a partir de la recepción completa de la información necesaria).</li>
+          <li>Considerar que este plazo podrá extenderse en función del número de cambios solicitados, ajustes posteriores o la complejidad específica del proyecto.</li>
+          <li>Permitir acompañamiento en revisiones con cliente final cuando sea necesario.</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <div class="section-title"><div class="t">3. ALCANCE DEL SERVICIO</div><div class="n">03</div></div>
+        <p>El trabajo mensual puede incluir:</p>
+        <ul>
+          <li>Interpretación y optimización de planos recibidos.</li>
+          <li>Modelado 3D de cocinas.</li>
+          <li>Generación de renders.</li>
+          <li>Ajustes y revisiones.</li>
+          <li>Reuniones virtuales con el cliente final para revisión del proyecto en tiempo real.</li>
+        </ul>
+        <p>Los modelos se desarrollan con mobiliario funcional, permitiendo la apertura de puertas, cajones y elementos móviles durante las revisiones con el cliente o en materiales audiovisuales, con el objetivo de mejorar la comprensión del proyecto y la experiencia de presentación.</p>
+        <p>Los proyectos se desarrollan dentro de jornada laboral estándar y conforme al volumen mensual contratado.</p>
+      </section>
+
+      <section class="section">
+        <div class="section-title"><div class="t">4. ESQUEMAS DE COLABORACIÓN MENSUAL</div><div class="n">04</div></div>
+
+        <div class="card">
+          <h3>PLAN MENSUAL A — VISUALIZACIÓN</h3>
+          <p class="price">$15,000 MXN + IVA mensuales</p>
+          <p>Incluye hasta 5 proyectos de cocina por mes.<br/>Reuniones virtuales incluidas.<br/>Entrega habitual de cada proyecto en 3 días hábiles*.</p>
+          <p class="price">Proyectos adicionales: $3,000 MXN + IVA por proyecto.</p>
+        </div>
+
+        <div class="card">
+          <h3>PLAN MENSUAL B — VISUALIZACIÓN + PLANOS TÉCNICOS</h3>
+          <p class="price">$20,000 MXN + IVA mensuales</p>
+          <p>Incluye hasta 5 proyectos de cocina por mes.<br/>Reuniones virtuales incluidas.<br/>Entrega habitual de cada proyecto en 3 días hábiles*.<br/>Incluye desarrollo profesional de planos AutoCAD e isométricos.</p>
+          <p class="price">Proyectos adicionales: $3,000 MXN + IVA por proyecto.</p>
+        </div>
+
+        <p class="note">*Los tiempos de entrega pueden ajustarse según el número de cambios solicitados, revisiones adicionales o la complejidad del proyecto.</p>
+        <p class="note">Los proyectos no utilizados dentro del mes correspondiente no son acumulables para periodos posteriores.</p>
+        <p class="note">En periodos de mayor actividad, podrá evaluarse flexibilidad operativa para mantener continuidad en sus proyectos, sujeto a disponibilidad.</p>
+      </section>
+
+      <section class="section">
+        <div class="section-title"><div class="t">5. SERVICIOS ADICIONALES</div><div class="n">05</div></div>
+        <ul>
+          <li>Levantamiento en sitio dentro de CDMX: desde $1,800 MXN + IVA por día.</li>
+          <li>Generación de video del proyecto: $1,000 MXN + IVA por proyecto.</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <div class="section-title"><div class="t">6. IMPACTO EN EL PROCESO COMERCIAL</div><div class="n">06</div></div>
+        <p>La visualización profesional y la revisión en tiempo real con el cliente final generan beneficios directos en el proceso de venta:</p>
+        <ul>
+          <li>El cliente comprende mejor el proyecto antes de fabricar.</li>
+          <li>Reduce la incertidumbre sobre medidas, materiales y distribución.</li>
+          <li>Permite ajustes inmediatos durante la presentación.</li>
+          <li>Acelera la toma de decisiones.</li>
+          <li>Disminuye revisiones posteriores.</li>
+        </ul>
+        <p>Este proceso suele traducirse en:</p>
+        <ul>
+          <li>Mayor confianza del cliente final.</li>
+          <li>Reducción del tiempo de cierre.</li>
+          <li>Incremento en la probabilidad de aprobación del proyecto.</li>
+        </ul>
+        <p>El objetivo del esquema mensual es que este soporte esté disponible de forma continua, funcionando como una extensión de su proceso comercial.</p>
+      </section>
+
+      <section class="section">
+        <div class="section-title"><div class="t">7. BENEFICIOS PARA SU EMPRESA</div><div class="n">07</div></div>
+        <ul>
+          <li>Presentaciones claras y profesionales para sus clientes.</li>
+          <li>Mayor involucramiento del cliente final en el proceso.</li>
+          <li>Reducción de tiempos de aprobación.</li>
+          <li>Un soporte que entiende su metodología y necesidades comerciales.</li>
+          <li>Capacidad operativa asegurada sin necesidad de negociar cada proyecto.</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <div class="section-title"><div class="t">8. VISIÓN DE COLABORACIÓN A LARGO PLAZO</div><div class="n">08</div></div>
+        <p>Buscamos consolidar una relación de trabajo estable y de confianza, en la que podamos acompañar el crecimiento de sus proyectos y adaptarnos a picos de trabajo cuando sea necesario.</p>
+        <p>Nuestro interés es convertirnos en un soporte constante dentro de su operación comercial, contribuyendo a que cada cliente reciba una presentación clara, rápida y profesional.</p>
+        <p>Conforme la colaboración evolucione, podremos ajustar el esquema para responder a mayores volúmenes, nuevas necesidades o proyectos especiales.</p>
+      </section>
+
+      <section class="section">
+        <div class="section-title"><div class="t">9. VIGENCIA</div><div class="n">09</div></div>
+        <p>El esquema se establece con renovación mensual, iniciando en la fecha de contratación correspondiente.</p>
+      </section>
+
+    </div>
+
+    <footer>
+    </footer>
+  </main>
+</body>
+</html>
